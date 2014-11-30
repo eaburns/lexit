@@ -1,0 +1,11 @@
+# This is the lexer description for the lexit description files.  This
+# is only here to play with, is not actually used by the lexit
+# library.
+
+Space -> '( |\t)+'
+NewLine -> '\n'
+Comment -> '#[^\n]*'
+String -> '[a-zA-Z][a-zA-Z0-9_]*'
+Arrow -> '->'
+Regexp -> '['][^\n]*[']'
+Error -> '.'
